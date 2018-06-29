@@ -1,0 +1,11 @@
+version: '3'
+services:
+  webserver:
+    build: ./docker/node
+    image: nuxt_image
+    container_name: nuxt_container
+    tty: true
+    volumes:
+      - .:/app
+    ports:
+      - "3000:3000"
