@@ -6,6 +6,7 @@ services:
     container_name: nuxt_container
     tty: true
     volumes:
-      - .:/app
+      - ./data:/app
     ports:
       - "3000:3000"
+      - "9005:9005"
