@@ -14,6 +14,14 @@ Into docker container.
 $ docker exec -it CONTAINER /bin/sh
 ```
 
+```shell
+$ firebase login
+```
+or
+```shell
+$ firebase login:ci --no-localhost
+```
+
 Create Vue.js project with Nuxt.js
 
 ```
@@ -30,3 +38,12 @@ $ yarn run dev
 If prepare done, access http://localhost:3000
 
 Enjoy your Vue.js :)
+
+
+added from original
+
+./docker/node/Dokcerfile
+npm -g firebase-tools
+
+./docker-compose.yml
+-p "9005:9005"
